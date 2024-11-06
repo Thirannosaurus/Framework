@@ -1,0 +1,451 @@
+<!doctype html>
+<html class="no-js" lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Über Uns</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="TechForge">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com">
+  <meta property="og:image" content="https://www.example.com/image.jpg">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <script src="js/app.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <nav class="sticky-nav">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <div class="nav-content">
+            <div class="logo-container">
+              <a href="landing_page.html">
+                <img src="img/logo/Logo.png" alt="Logo" class="logo">
+              </a>
+            </div>
+            <ul class="nav-list">
+                <li style="--item-number: 2;"><a style="padding-left: 0px; padding-right: 0px;" href="landing_page.html"><i class="fas fa-home"></i><span class="nav-text">Home</span></a></li>
+                <li style="--item-number: 2;"><a style="padding-left: 0px; padding-right: 0px;" href="sample_page2.html"><i class="fas fa-info-circle"></i><span class="nav-text">Über uns</span></a></li>
+                <li style="--item-number: 3;"><a style="padding-left: 0px; padding-right: 0px;" href="sample_page3.html"><i class="fas fa-box"></i><span class="nav-text">Produkte</span></a></li>
+                <li style="--item-number: 4;"><a style="padding-left: 0px; padding-right: 0px;" href="sample_page4.html"><i class="fas fa-cogs"></i><span class="nav-text">Dienstleistungen</span></a></li>
+                <li style="--item-number: 5;"><a style="padding-left: 0px; padding-right: 0px;" href="sample_page5.html"><i class="fas fa-envelope"></i><span class="nav-text">Kontakt</span></a></li>
+                <li style="--item-number: 6;"><a style="padding-left: 0px; padding-right: 0px;" href="sample_page6.html"><i class="fas fa-cog"></i><span class="nav-text">Login</span></a></li>
+            </ul>
+            <div class="menu-icon">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .dienstleistungen-section {
+      background-color: #f9f9f9;
+      padding: 80px 0;
+    }
+    .section-title {
+      font-size: 2.5em;
+      color: #333;
+      text-align: center;
+      margin-bottom: 50px;
+      font-weight: 700;
+    }
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .service-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: calc(33.33% - 20px);
+      margin-bottom: 40px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .service-header {
+      background-color: #2c3e50;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    .service-icon {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .service-title {
+      font-size: 1.5em;
+      margin: 0;
+      font-weight: 600;
+    }
+    .service-content {
+      padding: 20px;
+    }
+    .service-description {
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-size: 1em;
+    }
+    .service-features {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+    .service-features li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+      color: #333;
+      font-size: 0.9em;
+    }
+    .service-features li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #2c3e50;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #34495e;
+    }
+    .testimonial {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      font-weight: bold;
+      text-align: right;
+      margin-top: 10px;
+    }
+    .pricing-info {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .service-gallery {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .gallery-image {
+      width: 30%;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: 992px) {
+      .service-card {
+        width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 768px) {
+      .service-card {
+        width: 100%;
+      }
+      .gallery-image {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+  
+  <section class="dienstleistungen-section">
+    <div class="container">
+      <h2 class="section-title">Unsere umfassenden Dienstleistungen im Detail</h2>
+      <div class="services-container">
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="service-title">PC-Reparatur</h3>
+          </div>
+          <div class="service-content">
+            <p class="service-description">Schnelle und zuverlässige Reparatur für alle PC-Probleme. Unser erfahrenes Team steht Ihnen mit Expertise und modernster Technologie zur Seite.</p>
+            <ul class="service-features">
+              <li>Umfassende Hardware- und Softwarediagnose</li>
+              <li>Professionelle Komponentenreparatur und -austausch</li>
+              <li>Gründliche Virenentfernung und Systemreinigung</li>
+              <li>Sichere Datenrettung und -sicherung</li>
+              <li>Optimierung der Systemleistung</li>
+              <li>Behebung von Überhitzungsproblemen</li>
+              <li>Aktualisierung von Treibern und Betriebssystemen</li>
+            </ul>
+            <div class="pricing-info">
+              <p>Preise ab 49,99 € für Diagnose</p>
+              <p>Expressservice verfügbar</p>
+            </div>
+            <div class="service-gallery">
+              <img src="img/repair1.jpg" alt="Reparaturprozess" class="gallery-image">
+              <img src="img/repair2.jpg" alt="Diagnose-Tool" class="gallery-image">
+              <img src="img/repair3.jpg" alt="Reparierter PC" class="gallery-image">
+            </div>
+            <div class="testimonial">
+              <p>"TechForge hat meinen PC in Rekordzeit repariert und sogar optimiert. Ich bin begeistert von der Professionalität und dem Kundenservice!"</p>
+              <p class="testimonial-author">- Maria S., zufriedene Kundin</p>
+            </div>
+            <a href="#" class="cta-button">Jetzt Reparatur anfragen</a>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h3 class="service-title">Individueller PC-Bau</h3>
+          </div>
+          <div class="service-content">
+            <p class="service-description">Maßgeschneiderte PCs für Ihre individuellen Bedürfnisse. Von leistungsstarken Gaming-Rigs bis zu hocheffizienten Workstations - wir bauen Ihren Traumcomputer.</p>
+            <ul class="service-features">
+              <li>Ausführliche persönliche Beratung und Konfiguration</li>
+              <li>Verwendung ausschließlich hochwertiger Markenkomponenten</li>
+              <li>Professioneller Zusammenbau mit Liebe zum Detail</li>
+              <li>Umfangreiche Leistungsoptimierung und Stabilitätstests</li>
+              <li>Individuelle Gehäusemodifikationen und RGB-Beleuchtung</li>
+              <li>Wasserkühlung und Silent-Optimierung</li>
+              <li>3 Jahre Garantie auf alle selbstgebauten Systeme</li>
+            </ul>
+            <div class="pricing-info">
+              <p>Preise ab 799 € für Einsteiger-PCs</p>
+              <p>Finanzierung und Leasing möglich</p>
+            </div>
+            <div class="service-gallery">
+              <img src="img/custombuild1.jpg" alt="Gaming PC" class="gallery-image">
+              <img src="img/custombuild2.jpg" alt="Workstation" class="gallery-image">
+              <img src="img/custombuild3.jpg" alt="Silent PC" class="gallery-image">
+            </div>
+            <div class="testimonial">
+              <p>"Der Gaming-PC, den TechForge für mich gebaut hat, übertrifft alle meine Erwartungen. Die Beratung war erstklassig und das Ergebnis ist einfach wow!"</p>
+              <p class="testimonial-author">- Thomas K., begeisterter Gamer</p>
+            </div>
+            <a href="#" class="cta-button">Jetzt Ihren Traum-PC konfigurieren</a>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3 class="service-title">Professionelle Aufrüstung</h3>
+          </div>
+          <div class="service-content">
+            <p class="service-description">Maximieren Sie die Leistung Ihres bestehenden Systems durch gezielte Aufrüstung und Optimierung. Wir bringen Ihren PC auf den neuesten Stand der Technik.</p>
+            <ul class="service-features">
+              <li>Detaillierte Leistungsanalyse und maßgeschneiderte Beratung</li>
+              <li>Strategische Komponentenaufrüstung für maximale Leistungssteigerung</li>
+              <li>Umfassende Softwareoptimierung und Entfernung von Bloatware</li>
+              <li>Verbesserung der Systemkühlung für höhere Stabilität</li>
+              <li>SSD-Upgrades für schnellere Ladezeiten</li>
+              <li>RAM-Erweiterungen für besseres Multitasking</li>
+              <li>Grafikkarten-Upgrades für Gaming und kreative Anwendungen</li>
+            </ul>
+            <div class="pricing-info">
+              <p>Aufrüstungspakete ab 149 €</p>
+              <p>Kostenlose Leistungsanalyse bei Durchführung</p>
+            </div>
+            <div class="service-gallery">
+              <img src="img/upgrade1.jpg" alt="Vor dem Upgrade" class="gallery-image">
+              <img src="img/upgrade2.jpg" alt="Upgrade-Prozess" class="gallery-image">
+              <img src="img/upgrade3.jpg" alt="Nach dem Upgrade" class="gallery-image">
+            </div>
+            <div class="testimonial">
+              <p>"Ich dachte, ich müsste einen neuen PC kaufen, aber TechForge hat meinen alten Rechner so aufgerüstet, dass er wie neu läuft. Fantastischer Service!"</p>
+              <p class="testimonial-author">- Anna M., zufriedene Kundin</p>
+            </div>
+            <a href="#" class="cta-button">Jetzt Upgrade planen</a>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="service-title">Umfassende IT-Beratung</h3>
+          </div>
+          <div class="service-content">
+            <p class="service-description">Professionelle Beratung für all Ihre IT-Fragen und zukunftsorientierte Lösungen. Wir helfen Ihnen, die richtigen Entscheidungen für Ihre IT-Infrastruktur zu treffen.</p>
+            <ul class="service-features">
+              <li>Gründliche IT-Infrastrukturanalyse und Bedarfsermittlung</li>
+              <li>Entwicklung maßgeschneiderter IT-Strategien</li>
+              <li>Effektive Kostenoptimierung und ROI-Analysen</li>
+              <li>Individuelle Schulungen und Workshops für Ihr Team</li>
+              <li>Cloud-Migrationsberatung und Implementierungsplanung</li>
+              <li>IT-Sicherheitsaudits und Risikobewertungen</li>
+              <li>Unterstützung bei der Auswahl von Software und Hardware</li>
+            </ul>
+            <div class="pricing-info">
+              <p>Beratungsstunden ab 89 € / Stunde</p>
+              <p>Pauschalangebote für umfangreiche Projekte verfügbar</p>
+            </div>
+            <div class="service-gallery">
+              <img src="img/consulting1.jpg" alt="Beratungsgespräch" class="gallery-image">
+              <img src="img/consulting2.jpg" alt="Strategieentwicklung" class="gallery-image">
+              <img src="img/consulting3.jpg" alt="Schulung" class="gallery-image">
+            </div>
+            <div class="testimonial">
+              <p>"Die IT-Beratung von TechForge hat uns geholfen, unsere Prozesse zu optimieren und erhebliche Kosten einzusparen. Ein unschätzbarer Partner für unser Unternehmen."</p>
+              <p class="testimonial-author">- Dr. Michael R., Geschäftsführer</p>
+            </div>
+            <a href="#" class="cta-button">Jetzt Beratungstermin vereinbaren</a>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="service-title">Fortschrittliche IT-Sicherheit</h3>
+          </div>
+          <div class="service-content">
+            <p class="service-description">Umfassende Sicherheitslösungen zum Schutz Ihrer wertvollen Daten und Systeme. Wir machen Ihre IT-Infrastruktur widerstandsfähig gegen moderne Bedrohungen.</p>
+            <ul class="service-features">
+              <li>Durchführung detaillierter Sicherheitsaudits und Penetrationstests</li>
+              <li>Implementierung und Konfiguration modernster Firewall-Systeme</li>
+              <li>Umfassende Datenschutzberatung und DSGVO-Compliance</li>
+              <li>Entwicklung und Durchführung von Sicherheitsschulungen für Mitarbeiter</li>
+              <li>Einrichtung von Intrusion Detection und Prevention Systemen (IDS/IPS)</li>
+              <li>Implementierung von Multi-Faktor-Authentifizierung (MFA)</li>
+              <li>Erstellung und Umsetzung von Disaster Recovery Plänen</li>
+            </ul>
+            <div class="pricing-info">
+              <p>Sicherheitspakete ab 499 € für kleine Unternehmen</p>
+              <p>Individuelle Angebote für Enterprise-Lösungen</p>
+            </div>
+            <div class="service-gallery">
+              <img src="img/security1.jpg" alt="Sicherheitsanalyse" class="gallery-image">
+              <img src="img/security2.jpg" alt="Firewall-Konfiguration" class="gallery-image">
+              <img src="img/security3.jpg" alt="Mitarbeiterschulung" class="gallery-image">
+            </div>
+            <div class="testimonial">
+              <p>"Dank TechForge fühlen wir uns endlich sicher im Netz. Ihre Sicherheitslösungen sind state-of-the-art und der Support ist unübertroffen."</p>
+              <p class="testimonial-author">- Sarah L., IT-Leiterin</p>
+            </div>
+            <a href="#" class="cta-button">Jetzt Sicherheitscheck anfordern</a>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3 class="service-title">Innovative Netzwerklösungen</h3>
+          </div>
+          <div class="service-content">
+            <p class="service-description">Planung, Implementierung und Wartung von zukunftssicheren Netzwerk- und Cloud-Infrastrukturen. Wir optimieren Ihre Konnektivität für maximale Effizienz.</p>
+            <ul class="service-features">
+              <li>Maßgeschneidertes Netzwerkdesign für optimale Performance</li>
+              <li>Nahtlose Cloud-Migration und hybride Infrastrukturlösungen</li>
+              <li>Sichere VPN-Einrichtung für Remote-Arbeit und Standortvernetzung</li>
+              <li>Proaktives 24/7 Netzwerk-Monitoring und Management</li>
+              <li>Implementierung von Software-Defined Networking (SDN)</li>
+              <li>Aufbau von hochverfügbaren Clusterlösungen</li>
+              <li>Integration von IoT-Geräten in bestehende Netzwerke</li>
+            </ul>
+            <div class="pricing-info">
+              <p>Netzwerkanalyse ab 299 €</p>
+              <p>Monatliche Wartungspakete verfügbar</p>
+            </div>
+            <div class="service-gallery">
+              <img src="img/network1.jpg" alt="Netzwerkplanung" class="gallery-image">
+              <img src="img/network2.jpg" alt="Server-Rack" class="gallery-image">
+              <img src="img/network3.jpg" alt="Cloud-Migration" class="gallery-image">
+            </div>
+            <div class="testimonial">
+              <p>"Die Netzwerklösung von TechForge hat unsere Produktivität enorm gesteigert. Ausfallzeiten sind jetzt Geschichte, und unser Team kann nahtlos zusammenarbeiten."</p>
+              <p class="testimonial-author">- Andreas K., CTO</p>
+            </div>
+            <a href="#" class="cta-button">Jetzt Netzwerkanalyse starten</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <main>
+
+  </main>
+
+  <footer>
+        <div class="footer-section">
+          <h3>Schnelllinks</h3>
+          <ul>
+            <li><a href="#home">Startseite</a></li>
+            <li><a href="#produkte">Produkte</a></li>
+            <li><a href="#dienstleistungen">Dienstleistungen</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Kontakt</h3>
+          <p>Email: info@techforge.de</p>
+          <p>Telefon: +49 123 456789</p>
+          <p>Adresse: Musterstraße 123, 12345 Musterstadt</p>
+        </div>
+        <div class="footer-section">
+          <h3>Folgen Sie uns</h3>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 TechForge. Alle Rechte vorbehalten.</p>
+      </div>
+  </footer>
+
+  <script>
+ 
+  </script>
+</body>
+
+</html>

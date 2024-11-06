@@ -1,0 +1,325 @@
+<!doctype html>
+<html class="no-js" lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Über Uns</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="TechForge">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com">
+  <meta property="og:image" content="https://www.example.com/image.jpg">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <script src="js/app.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+
+ 
+</head>
+
+<body>
+  <nav class="sticky-nav">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <div class="nav-content">
+            <div class="logo-container">
+              <a href="landing_page.html">
+                <img src="img/logo/Logo.png" alt="Logo" class="logo">
+              </a>
+            </div>
+            <ul class="nav-list">
+                <li style="--item-number: 2;"><a style="padding-left: 0px; padding-right: 0px;" href="landing_page.html"><i class="fas fa-home"></i><span class="nav-text">Home</span></a></li>
+                <li style="--item-number: 2;"><a style="padding-left: 0px; padding-right: 0px;" href="sample_page2.html"><i class="fas fa-info-circle"></i><span class="nav-text">Über uns</span></a></li>
+                <li style="--item-number: 3;"><a style="padding-left: 0px; padding-right: 0px;" href="sample_page3.html"><i class="fas fa-box"></i><span class="nav-text">Produkte</span></a></li>
+                <li style="--item-number: 4;"><a style="padding-left: 0px; padding-right: 0px;" href="sample_page4.html"><i class="fas fa-cogs"></i><span class="nav-text">Dienstleistungen</span></a></li>
+                <li style="--item-number: 5;"><a style="padding-left: 0px; padding-right: 0px;" href="sample_page5.html"><i class="fas fa-envelope"></i><span class="nav-text">Kontakt</span></a></li>
+                <li style="--item-number: 6;"><a style="padding-left: 0px; padding-right: 0px;" href="sample_page6.html"><i class="fas fa-cog"></i><span class="nav-text">Login</span></a></li>
+            </ul>
+            <div class="menu-icon">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .section-padding {
+      padding: 80px 0;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .section-description {
+      margin-bottom: 50px;
+      color: #333;
+      font-size: 1.2em;
+      line-height: 1.8;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .product-category {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      padding: 35px;
+      margin-bottom: 50px;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .product-category:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+    .product-category::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 250px;
+      height: 250px;
+      background: linear-gradient(45deg, #4CAF50, #2196F3);
+      border-radius: 50%;
+      opacity: 0.1;
+      transition: all 0.6s ease;
+    }
+    .product-category:hover::before {
+      transform: scale(2.5);
+    }
+    .category-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .product-category h3 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #2c3e50;
+      font-weight: 700;
+    }
+    .product-category p {
+      color: #34495e;
+      margin-bottom: 25px;
+      line-height: 1.8;
+      font-size: 1.15em;
+    }
+    .product-range {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 25px;
+    }
+    .product-range li {
+      margin-bottom: 12px;
+      padding-left: 30px;
+      position: relative;
+      font-size: 1.1em;
+      color: #2c3e50;
+    }
+    .product-range li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+    .button-primary {
+      width: 100%;
+      padding: 15px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      font-size: 1.1em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .button-primary:hover {
+      background-color: #45a049;
+      box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+    }
+    #produkte {
+      background-color: #f5f5f5;
+    }
+    #produkte h2 {
+      color: #2c3e50;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+  </style>
+  
+  <section id="produkte" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns text-center">
+          <h2>Unser umfassendes Sortiment an PC-Komponenten</h2>
+          <p class="section-description">Entdecken Sie unsere breit gefächerte Auswahl an hochwertigen Computerteilen für jeden Bedarf - von Einsteigern bis zu Profis. Wir bieten Ihnen modernste Technologie und zuverlässige Qualität für optimale Systemleistung.</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="six columns">
+          <div class="product-category">
+            <img src="img/processors.jpg" alt="Prozessoren" class="category-image">
+            <h3>Prozessoren (CPUs)</h3>
+            <p>Unsere umfangreiche Auswahl an Prozessoren deckt alle Leistungsklassen ab. Von effizienten Einsteigermodellen bis hin zu High-End-Lösungen für extreme Rechenleistung - wir haben die perfekte CPU für jeden Anwendungsbereich.</p>
+            <ul class="product-range">
+              <li>Einsteigermodelle für alltägliche Aufgaben</li>
+              <li>Mittelklasse-CPUs für anspruchsvolle Anwendungen</li>
+              <li>High-End-Prozessoren für professionelle Nutzer und Enthusiasten</li>
+              <li>Server-CPUs für unternehmenskritische Aufgaben</li>
+            </ul>
+            <button class="button-primary">Prozessoren entdecken</button>
+          </div>
+        </div>
+        
+        <div class="six columns">
+          <div class="product-category">
+            <img src="img/graphics_cards.jpg" alt="Grafikkarten" class="category-image">
+            <h3>Grafikkarten (GPUs)</h3>
+            <p>Von grundlegender 2D-Darstellung bis hin zu fotorealistischem 3D-Rendering - unsere Grafikkarten bieten für jeden Anspruch die passende Lösung. Erleben Sie gestochen scharfe Bilder und flüssige Framerates in jeder Preisklasse.</p>
+            <ul class="product-range">
+              <li>Einstiegskarten für Office und leichtes Gaming</li>
+              <li>Mainstream-GPUs für Full-HD-Gaming und Content Creation</li>
+              <li>High-End-Karten für 4K-Gaming und professionelle Anwendungen</li>
+              <li>Workstation-GPUs für CAD und 3D-Modellierung</li>
+            </ul>
+            <button class="button-primary">Grafikkarten erkunden</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="six columns">
+          <div class="product-category">
+            <img src="img/memory.jpg" alt="Arbeitsspeicher" class="category-image">
+            <h3>Arbeitsspeicher (RAM)</h3>
+            <p>Steigern Sie die Leistung Ihres Systems mit unserem vielfältigen RAM-Angebot. Von Standard-Modulen bis hin zu Hochgeschwindigkeits-Kits bieten wir Speicherlösungen für jedes Budget und jeden Anwendungsfall.</p>
+            <ul class="product-range">
+              <li>DDR4-Module für aktuelle Systeme</li>
+              <li>DDR5-RAM für zukunftssichere Setups</li>
+              <li>ECC-Speicher für Server und Workstations</li>
+              <li>Übertakteter RAM für maximale Performance</li>
+            </ul>
+            <button class="button-primary">RAM-Optionen vergleichen</button>
+          </div>
+        </div>
+        
+        <div class="six columns">
+          <div class="product-category">
+            <img src="img/storage.jpg" alt="Speicherlösungen" class="category-image">
+            <h3>Speicherlösungen</h3>
+            <p>Vom klassischen Massenspeicher bis zur ultraschnellen SSD - wir bieten Ihnen eine breite Palette an Speicherlösungen für jede Anforderung. Sichern Sie Ihre Daten zuverlässig und greifen Sie blitzschnell darauf zu.</p>
+            <ul class="product-range">
+              <li>SATA-SSDs für kostengünstige Leistungssteigerung</li>
+              <li>NVMe-SSDs für maximale Geschwindigkeit</li>
+              <li>Hochkapazitive HDDs für Datenspeicherung</li>
+              <li>Externe Laufwerke für mobile Nutzung</li>
+            </ul>
+            <button class="button-primary">Speicheroptionen entdecken</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="six columns">
+          <div class="product-category">
+            <img src="img/motherboards.jpg" alt="Motherboards" class="category-image">
+            <h3>Motherboards</h3>
+            <p>Das Fundament jedes PCs: Unsere Motherboards bieten die perfekte Basis für Ihr System. Von kompakten Mini-ITX-Boards bis hin zu feature-reichen E-ATX-Modellen finden Sie bei uns das ideale Mainboard für Ihren Anwendungsfall.</p>
+            <ul class="product-range">
+              <li>Einsteigerboards für Budget-Systeme</li>
+              <li>Gaming-Mainboards mit optimierter Leistung</li>
+              <li>Workstation-Boards für professionelle Anwendungen</li>
+              <li>Server-Motherboards für Unternehmensumgebungen</li>
+            </ul>
+            <button class="button-primary">Motherboards ansehen</button>
+          </div>
+        </div>
+        
+        <div class="six columns">
+          <div class="product-category">
+            <img src="img/cooling_solutions.jpg" alt="Kühlungslösungen" class="category-image">
+            <h3>Kühlungslösungen</h3>
+            <p>Halten Sie Ihr System kühl und leise mit unseren vielfältigen Kühlungsoptionen. Von einfachen Luftkühlern bis hin zu komplexen Wasserkühllösungen bieten wir für jedes System die passende Kühlung.</p>
+            <ul class="product-range">
+              <li>CPU-Luftkühler für verschiedene TDP-Klassen</li>
+              <li>All-in-One Wasserkühlungen für einfache Installation</li>
+              <li>Custom-Wasserkühlungskomponenten für Enthusiasten</li>
+              <li>Gehäuselüfter für optimalen Airflow</li>
+            </ul>
+            <button class="button-primary">Kühloptionen erkunden</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+
+  <main>
+
+  </main>
+
+  <footer>
+        <div class="footer-section">
+          <h3>Schnelllinks</h3>
+          <ul>
+            <li><a href="#home">Startseite</a></li>
+            <li><a href="#produkte">Produkte</a></li>
+            <li><a href="#dienstleistungen">Dienstleistungen</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Kontakt</h3>
+          <p>Email: info@techforge.de</p>
+          <p>Telefon: +49 123 456789</p>
+          <p>Adresse: Musterstraße 123, 12345 Musterstadt</p>
+        </div>
+        <div class="footer-section">
+          <h3>Folgen Sie uns</h3>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 TechForge. Alle Rechte vorbehalten.</p>
+      </div>
+  </footer>
+
+  <script>
+ 
+  </script>
+</body>
+
+</html>
